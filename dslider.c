@@ -305,6 +305,7 @@ main(int argc, char *argv[])
 	int i;
 	min = 0;
 	max = 100;
+	value = min;
 
 	for (i = 1; i < argc; i++)
 		/* these options take no arguments */
@@ -361,7 +362,6 @@ main(int argc, char *argv[])
 		die("pledge");
 #endif
 
-	value = min;
 	grabkeyboard();
 	setup();
 	run();
